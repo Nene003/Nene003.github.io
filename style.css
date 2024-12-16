@@ -1,0 +1,164 @@
+/* Splošni slog */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    color: #000000;
+}
+h5 {
+    margin: 0;
+    color: #ffffff;
+}
+h2{
+    font-size: 46px;
+}
+h3{
+    font-size: 32px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Glava */
+.header {
+    background: linear-gradient(to left, #b8b29d, #f9d95a);
+    padding: 20px 0;
+    text-align: left;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-weight: bold;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.banner img {
+    width: 100%;
+    height: 710px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.banner h5 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Storitve */
+.services {
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+}
+
+.service-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #ffda62;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.service ul {
+    text-align: left;
+}
+
+.combo {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Cenik */
+.pricing {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.pricing h2 {
+    margin-bottom: 20px;
+}
+
+.pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.price-item {
+    width: 30%;
+    background: #eee;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    padding: 40px 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer h2 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+#map {
+    margin-top: 20px;
+    height: 300px;
+    background: url('map-placeholder.png') no-repeat center center/cover;
+}
