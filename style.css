@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4,h6 {
     margin: 0;
     color: #000000;
 }
@@ -20,23 +20,42 @@ h2{
 h3{
     font-size: 32px;
 }
+h6{
+    font-size: 20px;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 5px;
+    text-align: left;
 }
 
 /* Glava */
 .header {
-    background: linear-gradient(to left, #b8b29d, #f9d95a);
+    background: linear-gradient(to top, #a7adb8, #5c91e1);
     padding: 20px 0;
-    text-align: left;
+    text-align: center;
 }
 
 .header h1 {
     font-size: 3.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    text-align: left;
+    font-style: italic;
+    font-family: Helvetica;
 }
+
+.title, .call {
+    display: inline-block; /* Postavi elemente v isto vrstico */
+    vertical-align: bottom; /* Poravna elemente po sredini */
+    margin: 10px; /* Odstrani privzeti odmik */
+}
+
+.call {
+    margin-left: 600px;
+}
+
 
 .nav {
     display: flex;
@@ -52,6 +71,10 @@ h3{
 
 .nav a:hover {
     text-decoration: underline;
+}
+
+.container h4 {
+    text-align: right;
 }
 
 /* Banner */
@@ -94,13 +117,15 @@ h3{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    font-size: 22px;
+    line-height: 1.5;
 }
 
 .service {
     width: 45%;
     margin-bottom: 20px;
     padding: 20px;
-    background: #ffda62;
+    background: #6c97d6;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -110,10 +135,23 @@ h3{
 }
 
 .combo {
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: bold;
-    color: #ffcc00;
+    color: #6c97d6;
+    font-size: 22px;
+    background: #121212;
+    width: 40%;
+    margin-bottom: 20px;
+    padding: 1px;
+    text-align: center;
+    margin: auto;
+
 }
+.combo h3 {
+    font-size: 32px;
+    color:#6c97d6;
+}
+
 
 /* Cenik */
 .pricing {
@@ -124,6 +162,7 @@ h3{
 .pricing h2 {
     margin-bottom: 20px;
 }
+
 
 .pricing-table {
     display: flex;
@@ -149,7 +188,7 @@ h3{
 }
 
 .footer h2 {
-    color: #ffcc00;
+    color: #6c97d6;
     margin-bottom: 10px;
 }
 
