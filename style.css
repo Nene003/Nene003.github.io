@@ -15,7 +15,7 @@ h5 {
     color: #ffffff;
 }
 h2{
-    font-size: 46px;
+    font-size: 52px;
 }
 h3{
     font-size: 32px;
@@ -93,7 +93,7 @@ h6{
 
 .banner h5 {
     position: absolute;
-    top: 80%;
+    top: 83%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2rem;
@@ -118,7 +118,7 @@ h6{
     justify-content: space-around;
     flex-wrap: wrap;
     font-size: 22px;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 .service {
@@ -126,25 +126,43 @@ h6{
     margin-bottom: 20px;
     padding: 20px;
     background: #6c97d6;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
+.service-columns .service:nth-child(1) {
+    background: #131313; /* Barva za levi stolpec */
+    color: #fff;
+}
+
+.service-columns .service:nth-child(1) h3 {
+    color: #f7f2f2;
+}
+
 
 .service ul {
     text-align: left;
 }
+
+.service-columns .service:nth-child(2) {
+    background: #6c97d6; /* Barva za levi stolpec */
+    
+}
+
+
 
 .combo {
     margin-top: 10px;
     font-weight: bold;
     color: #6c97d6;
     font-size: 22px;
-    background: #121212;
+    background: #131313;
     width: 40%;
     margin-bottom: 20px;
     padding: 1px;
     text-align: center;
     margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 
 }
 .combo h3 {
@@ -157,6 +175,7 @@ h6{
 .pricing {
     padding: 80px 20px;
     text-align: center;
+    
 }
 
 .pricing h2 {
@@ -173,10 +192,15 @@ h6{
 
 .price-item {
     width: 30%;
-    background: #eee;
+    background: #e3e3e3;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+}
+
+.price-item h6{
+    font-size: 24px;
+    margin-top: 10px;
 }
 
 /* Footer */
