@@ -103,7 +103,7 @@ h6{
 
 .banner img {
     width: 100%;
-    height: 710px;
+    height: auto;
     object-fit: cover;
     filter: brightness(70%);
 }
@@ -113,7 +113,7 @@ h6{
     top: 83%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
+    font-size: 2.5rem;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border-radius: 5px;
@@ -191,7 +191,7 @@ h6{
 
 /* Cenik */
 .pricing {
-    padding: 80px 20px;
+    padding: 30px 20px;
     text-align: center;
     
 }
@@ -288,6 +288,11 @@ h6{
     background: url('map-placeholder.png') no-repeat center center/cover;
 }
 
+.map-container iframe {
+    width: 80%;
+}
+
+
 .social-media {
     margin-top: 10px;
 }
@@ -328,3 +333,354 @@ a:active {
     color: #6c97d6; /* Barva povezave, ko je kliknjena */
 }
 
+
+
+
+
+
+
+/* !!! ZA TELEFON !!!*/
+
+@media (max-width: 768px){
+    /* Splošni slog */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, h4,h6 {
+    margin: 0;
+    color: #000000;
+}
+h5 {
+    margin: 0;
+    color: #ffffff;
+}
+h2{
+    font-size: 52px;
+}
+h3{
+    font-size: 32px;
+}
+h6{
+    font-size: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5px;
+    text-align: left;
+}
+
+/* Glava */
+.header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #a7adb8, #5c91e1);
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    text-align: center;
+    font-style: italic;
+    font-family: Helvetica;
+    width: 90%;
+}
+
+.title, .call {
+    display: block ; /* Postavi elemente v isto vrstico */
+    margin: 10px; /* Odstrani privzeti odmik */
+    text-align: center;
+}
+
+.call {
+    font-weight: bold;
+}
+
+.call a {
+    color: #000; /* Barva povezave (črna, lahko spremeniš na katerokoli barvo) */
+    text-decoration: none; /* Odstrani podčrtaj */
+}
+
+/* Povezava, ko je miška nad njo (hover) */
+.call a:hover {
+    color: #fff; /* Barva povezave ob hoverju (spremeni po želji) */
+    text-decoration: underline; /* Podčrtaj povezave ob hoverju (po želji) */
+}
+
+/* Povezava, ko je kliknjena (aktivna) */
+.call a:active {
+    color: #fff; /* Barva povezave, ko je kliknjena */
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-weight: bold;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.container h4 {
+    text-align: right;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.banner img {
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.banner h5 {
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px 8px;
+    border-radius: 5px;
+}
+
+/* Storitve */
+.services {
+    padding: 10px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.service-columns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+.service {
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #6c97d6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.service-columns .service:nth-child(1) {
+    background: #131313; /* Barva za levi stolpec */
+    color: #fff;
+}
+
+.service-columns .service:nth-child(1) h3 {
+    color: #f7f2f2;
+}
+
+
+.service ul {
+    text-align: left;
+}
+
+.service ul li {
+    margin-bottom: 10px; /* Povečaj razmak med alinejami */
+    line-height: 1.2; /* Spremeni razmak znotraj vsake alineje */
+}
+
+.service-columns .service:nth-child(2) {
+    background: #6c97d6; /* Barva za levi stolpec */
+    
+}
+
+.combo {
+    margin: 0;
+    font-weight: bold;
+    color: #6c97d6;
+    font-size: 22px;
+    background: #131313;
+    width: 100%;
+    padding: 1px;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+}
+.combo h3 {
+    font-size: 30px;
+    color:#6c97d6;
+}
+
+
+/* Cenik */
+.pricing {
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pricing h2 {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+
+.pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.price-item {
+    width: 90%;
+    background: #e3e3e3;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.price-item h6{
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+/* Footer */
+.footer {
+    background: #333; /* Barva ozadja */
+    color: #fff; /* Barva pisave */
+    text-align: center;
+    padding: 20px;
+}
+
+.footer h2 {
+    color: #ffcc00; /* Rumena barva naslova */
+    font-size: 2.5rem;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.contact-info {
+    display: flex;  
+    flex-direction: column;             /* Flexbox za poravnavo v vrstici */
+    justify-content: center; /* Enak razmak med elementi */
+    align-items: center;          /* Vertikalna poravnava na sredino */
+    gap: 12px;                   /* Razmak med elementi */
+    font-size: 18px;             /* Velikost pisave */
+    color: #fff;                 /* Barva pisave */
+    background-color: #333;      /* Ozadje za boljšo vidljivost */
+    padding: 10px 10px;          /* Notranji razmik */
+    border-radius: 5px;          /* Zaobljeni robovi (opcijsko) */
+}
+
+.info-item {
+    display: flex;               /* Poravnava ikone in teksta */
+    align-items: center;
+}
+
+.info-item i {
+    margin-right: 8px;           /* Razmak med ikono in tekstom */
+}
+
+.contact-info i {
+    color:#6c97d6;  
+    font-size: 20px;           /* Ikone v modri barvi */
+}
+
+
+.contact-info{
+    margin-bottom: 0.5%;
+}
+
+.footer h2{
+    color:#6c97d6;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 48px;
+}
+
+.footer p {
+    font-size: 18px;
+    margin-bottom: 1.5%;
+}
+
+#map {
+    margin-top: 25px;
+    height: 300px;
+    background: url('map-placeholder.png') no-repeat center center/cover;
+}
+
+.map-container iframe {
+    width: 100%;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color:#6c97d6;
+     /* Rumena ob hoverju */
+}
+
+.fa-facebook {
+    font-size: 40px;
+    color: #3b5998; /* Facebook modra barva */
+    margin-top: 0.5%;
+}
+
+
+/* Povezave brez podčrtaja in z željeno barvo */
+a {
+    color: #fff; /* Barva povezave (črna, lahko spremeniš na katerokoli barvo) */
+    text-decoration: none; /* Odstrani podčrtaj */
+}
+
+/* Povezava, ko je miška nad njo (hover) */
+a:hover {
+    color: #6c97d6; /* Barva povezave ob hoverju (spremeni po želji) */
+    text-decoration: underline; /* Podčrtaj povezave ob hoverju (po želji) */
+}
+
+/* Povezava, ko je kliknjena (aktivna) */
+a:active {
+    color: #6c97d6; /* Barva povezave, ko je kliknjena */
+}
+
+}
