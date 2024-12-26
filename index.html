@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="sl">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avto Buum</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <!-- Glava strani -->
     <header class="header">
         <div class="container">
             <h1 class="title">AVTO BUUM</h1>
-            <p class="call">Pokliči | TEL: 041-212-841</p> 
+            <p class="call"> <a href="tel:+38641212841">Pokliči | TEL: 041-212-841</a></p> 
             <nav class="nav">
                 <a href="#domov">Domov</a>
                 <a href="#storitve">Storitve</a>
                 <a href="#cenik">Cenik</a>
                 <a href="#kontakt">Kontakt</a>
-                <a href="#rezervacija">Book Online</a>
+                
             </nav>
             
         </div>
@@ -85,13 +89,37 @@
     </section>
 
     <!-- Kontakt -->
-    <footer id="kontakt" class="footer">
-        <h2>Obiščite nas!</h2>
-        <p>Za čisto in sijoče vozilo</p>
-        <p>Email: bostjan.baranasic@gmail.com</p>
-        <p>Naslov: Bakovci, Panonska ul. 14, 9000 Murska Sobota</p>
-        <p>Telefon: 041 212 841</p>
-        <div id="map">[Google map]</div>
-    </footer>
+     <section id="kontakt"class="footer">
+        <div class="footer-content">
+            <h2>Obiščite nas!</h2>
+            <p>ZA ČISTO IN SIJOČE VOZILO</p>
+            <div class="contact-info">
+                <span class="info-item">
+                    <i class="fa fa-envelope"></i> <a href="mailto:bostjan.baranasic@gmail.com">bostjan.baranasic@gmail.com</a>
+                </span>
+                <span class="info-item">
+                    <i class="fa fa-phone"></i> <a href="tel:+38641212841">Tel: 041-212-841</a>
+                </span>
+                <span class="info-item">
+                    <i class="fa fa-map-marker"></i>  <a href="https://www.google.com/maps/place/Avto+Buum+vzdr%C5%BEevanje+in+popravila+motornih+vozil+Bo%C5%A1tjan+Barana%C5%A1i%C4%8D+s.p./@46.6204834,16.1479893,17z/data=!3m1!4b1!4m6!3m5!1s0x476f392b30e4bd73:0xad5c438e9d1d133e!8m2!3d46.6204834!4d16.1505642!16s%2Fg%2F1hcb5hyy2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">Bakovci, Panonska ul. 14, 9000 Murska Sobota</a>
+                </span>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2740.317799467149!2d16.147989276456766!3d46.620483371116435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f392b30e4bd73%3A0xad5c438e9d1d133e!2sAvto%20Buum%20vzdr%C5%BEevanje%20in%20popravila%20motornih%20vozil%20Bo%C5%A1tjan%20Barana%C5%A1i%C4%8D%20s.p.!5e0!3m2!1ssl!2ssi!4v1735222283319!5m2!1ssl!2ssi"
+                    width="80%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/bostjan.baranasic/">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+     </section>
 </body>
 </html>
