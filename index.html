@@ -9,36 +9,62 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="avtobuumfavicon.ico">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avto Buum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="avtobuumfavicon.ico">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <!-- META DESCRIPTION -->
+    <meta name="description" content="AVTO BUUM – profesionalno poliranje in globinsko čiščenje vozil. Poskrbimo za sijaj vašega avtomobila, hitra rezervacija terminov preko telefona ali e-pošte.">
 </head>
+
 <body>
     <!-- Glava strani -->
+
+    
     <header class="header">
         <div class="container">
             <h1 class="title">AVTO BUUM</h1>
             <p class="call"> <a href="tel:+38641212841">Pokliči | TEL: 041-212-841</a></p> 
-            <nav class="nav">
+            <!-- Hamburger gumb -->
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+            <nav class="nav" id="nav-menu">
                 <a href="#domov">Domov</a>
                 <a href="#storitve">Storitve</a>
                 <a href="#cenik">Cenik</a>
                 <a href="#kontakt">Kontakt</a>
                 
-            </nav>
-            
+            </nav>                
         </div>
     </header>
     
     <!-- Glavni banner -->
     <section class="banner">
-        <img src="slika1.jpg" alt="Luksuzni avto">
-        <h5>PRIVOŠČITE SVOJEMU AVTU PREMIUM NEGO</h5>
-    </section>
+    <div class="banner-overlay"></div>
+    <img src="slika1.jpg" alt="Luksuzni avto">
+    <div class="banner-text">
+        <h2>Privoščite svojemu avtu premium nego</h2>
+        <p>Poliranje, globinsko čiščenje in zaščita vozil na enem mestu</p>
+        <a href="mailto:bostjan.baranasic@gmail.com?subject=Rezervacija termina" class="btn-primary">Rezerviraj termin</a>
+    </div>
+</section>
+
 
     <!-- Storitve -->
     <section id="storitve" class="services">
         <h2>Storitve</h2>
         <div class="service-columns">
-            <div class="service">
+        <div class="service slide-left">
                 <h3>Zunanjost</h3>
                 <ul>
                     <li>Poliranje vozil (osebna, tovorna, dostavna, počitniška...)</li>
@@ -50,7 +76,7 @@
                     <li>Avtokleparstvo in avtoličarstvo</li>
                 </ul>
             </div>
-            <div class="service">
+                <div class="service slide-right">
                 <h3>Notranjost</h3>
                 <ul>
                     <li>Globinsko čiščenje (osebna, tovorna, dostavna, počitniška...)</li>
@@ -60,7 +86,11 @@
                 </ul>
             </div>
         </div>
-        <div class="combo"><p><h3>Komplet</h3>Poliranje + globinsko čiščenje</p></div>
+            <div class="combo slide-up">
+            <h3>Komplet</h3>
+            <p>Poliranje + globinsko čiščenje</p>
+        </div>
+
     </section>
 
     <!-- Cenik -->
@@ -122,5 +152,47 @@
             </a>
         </div>
      </section>
+
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = navMenu.querySelectorAll('a'); // vse povezave v meniju
+
+    // Odpri/zapri meni ob kliku na hamburger
+    hamburger.addEventListener('click', (e) => {
+    navMenu.classList.toggle('active');
+    e.stopPropagation(); // prepreči takojšnje zapiranje
+    });
+
+    // Zapri meni, če kliknemo kjerkoli zunaj menija
+    document.addEventListener('click', (e) => {
+    if (navMenu.classList.contains('active') && !navMenu.contains(e.target) && e.target !== hamburger) {
+        navMenu.classList.remove('active');
+    }
+    });
+
+    navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+    });
+    });
+
+   const slideElements = document.querySelectorAll('.slide-left, .slide-right, .slide-up, .price-item');
+
+    const slideObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // animacija se zgodi samo enkrat
+            }
+        });
+    }, { threshold: 0.2 });
+
+    slideElements.forEach(el => slideObserver.observe(el));
+
+
+    </script>
+
+
 </body>
 </html>
