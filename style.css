@@ -1,3 +1,4 @@
+
 /* Splošni slog */
   
 body {
@@ -35,7 +36,7 @@ h6{
 /* Glava */
 .header {
     background: linear-gradient(to top, #a7adb8, #5c91e1);
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -50,8 +51,21 @@ h6{
     -webkit-text-fill-color: inherit;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
     margin: 20px 0;
-    animation: fadeInDown 2s ease;
+    animation: fadeInDown 3s ease;
 }
+
+.header img {
+    position: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    filter: brightness(100%);
+    animation: fadeInDown 3s ease;
+}
+
 
 @keyframes fadeInDown {
     from { 
@@ -154,7 +168,7 @@ h6{
 .title, .call {
     display: inline-block; /* Postavi elemente v isto vrstico */
     vertical-align: bottom; /* Poravna elemente po sredini */
-    margin: 10px; /* Odstrani privzeti odmik */
+    margin: 30px; /* Odstrani privzeti odmik */
 }
 
 .call {
@@ -294,7 +308,7 @@ h6{
 
 .combo {
     font-weight: bold;
-    color: #6c97d6;
+    color: #e4c900;
     font-size: 22px;
     background: #131313;
     width: 40%;
@@ -319,7 +333,7 @@ h6{
 
 .combo h3 {
     font-size: 32px;
-    color:#6c97d6;
+    color:#e4c900;
     margin-top: 10px;
 }
 
@@ -493,6 +507,20 @@ a:active {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* !!! ZA TELEFON !!!*/
 
 @media (max-width: 768px){
@@ -546,6 +574,20 @@ h6{
     font-family: 'Poppins', sans-serif;
     width: 100%;
 }
+
+.header img {
+    position: center;
+    margin: 0px 0px;
+    margin-left: 25%;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    filter: brightness(100%);
+    animation: fadeInDown 3s ease;
+}
+
+
+
 
 .title, .call {
     display: block ; /* Postavi elemente v isto vrstico */
