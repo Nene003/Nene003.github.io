@@ -97,9 +97,9 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
+  height: 6rem;
 }
-.logo img { height: 3rem; width: auto; }
+.logo img { height: 5rem; width: auto; }
 .logo { transition: transform .3s ease; }
 .logo:hover { transform: scale(1.03); }
 .nav { display: none; gap: 2rem; }
